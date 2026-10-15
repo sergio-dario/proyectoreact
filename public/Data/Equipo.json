@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana Martínez",
+    "email": "ana.martinez@example.com",
+    "puesto": "Diseñadora de interiores",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=320&h=320&q=85"
+  },
+  {
+    "id": 2,
+    "nombre": "Tomás Herrera",
+    "email": "tomas.herrera@example.com",
+    "puesto": "Asesor de ventas",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=320&h=320&q=85"
+  },
+  {
+    "id": 3,
+    "nombre": "Lucía Fernández",
+    "email": "lucia.fernandez@example.com",
+    "puesto": "Coordinadora de entregas",
+    "foto": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=320&h=320&q=85"
+  }
+]
