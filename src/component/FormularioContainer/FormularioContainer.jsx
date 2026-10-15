@@ -28,7 +28,7 @@ const manejarCambioImagen = (evento) => {
     return;
   }
 
-  const apiKey = '7d5ea2eeeb87ec90848e7875ad930db3'; //  
+  const apiKey = 'ingrese su api key aqui'; //  
   const formData = new FormData();
   formData.append('image', imagenFile);
 
