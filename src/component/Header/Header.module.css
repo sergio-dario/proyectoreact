@@ -1,0 +1,181 @@
+.header {
+	color: #293b2f;
+	background: #fbfaf6;
+	border-bottom: 1px solid #e2e3d9;
+}
+
+.announcement {
+	display: flex;
+	min-height: 34px;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 0 clamp(18px, 4vw, 48px);
+	background: #304b3b;
+	color: #f6f4eb;
+	font-size: 10px;
+	font-weight: 650;
+	text-transform: uppercase;
+}
+
+.announcementLead {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	margin: 0;
+}
+
+.announcementDot {
+	width: 6px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: #c7a66c;
+}
+
+.announcementNote {
+	margin: 0;
+	color: #d9e0d6;
+}
+
+.inner {
+	display: grid;
+	max-width: 1126px;
+	min-height: 88px;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+	gap: 24px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 clamp(18px, 4vw, 48px);
+}
+
+.brand {
+	display: flex;
+	min-width: 0;
+	align-items: center;
+	gap: 12px;
+}
+
+.brandMark {
+	display: grid;
+	width: 40px;
+	aspect-ratio: 1;
+	flex: 0 0 auto;
+	place-items: center;
+	border: 1px solid #617662;
+	color: #385342;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 12px;
+}
+
+.brandCopy {
+	display: grid;
+	gap: 3px;
+}
+
+.brandName {
+	color: #293b2f;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 24px;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.brandTagline {
+	color: #7b8176;
+	font-size: 9px;
+	font-weight: 650;
+	text-transform: uppercase;
+}
+
+.sections {
+	display: flex;
+	align-items: center;
+	gap: clamp(20px, 3vw, 38px);
+	color: #72786f;
+	font-size: 13px;
+	white-space: nowrap;
+}
+
+.sections > span {
+	position: relative;
+}
+
+.sectionActive {
+	color: #304b3b;
+	font-weight: 650;
+}
+
+.sectionActive::after {
+	position: absolute;
+	right: 0;
+	bottom: -11px;
+	left: 0;
+	height: 2px;
+	background: #b18a5e;
+	content: '';
+}
+
+.edition {
+	display: flex;
+	align-items: center;
+	justify-self: end;
+	gap: 10px;
+	border-left: 1px solid #e0e1d8;
+	padding-left: 18px;
+}
+
+.editionNumber {
+	color: #42624e;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 23px;
+}
+
+.editionLabel {
+	color: #7b8176;
+	font-size: 9px;
+	font-weight: 650;
+	line-height: 1.35;
+	text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+	.inner {
+		min-height: 0;
+		grid-template-columns: 1fr auto;
+		gap: 18px;
+		padding-block: 17px;
+	}
+
+	.sections {
+		grid-column: 1 / -1;
+		grid-row: 2;
+		gap: 24px;
+		border-top: 1px solid #e5e5dc;
+		padding-top: 14px;
+	}
+
+	.edition {
+		display: none;
+	}
+}
+
+@media (max-width: 420px) {
+	.announcement {
+		justify-content: center;
+	}
+
+	.announcementNote {
+		display: none;
+	}
+
+	.brandName {
+		font-size: 22px;
+	}
+
+	.sections {
+		justify-content: space-between;
+		gap: 12px;
+		font-size: 12px;
+	}
+}
